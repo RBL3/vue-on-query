@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es5",
+        "jsx": "preserve",
+        "module": "commonjs",
+        "lib": ["ESNext", "DOM", "ES6"],
+        "allowJs": true,
+        "checkJs": true,
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": false,
+        "outDir": "./lib",
+        "removeComments": true,
+        "strict": true,
+        "strictNullChecks": false,
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": ["./*"],
+        },
+    },
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "./test",
+        "lib",
+        "node_modules",
+        "**/__tests__/*",
+        "./webpack.config.js",
+        "./webpack.dev.js",
+    ]
+}
